@@ -13,7 +13,7 @@ app.get('/',async(req,res)=>{
         if(req.query.type){
             request(url.play_url).pipe(res);
         }else{
-            res.send(url)
+            res.redirect(url.play_url)
         }
     }
 })
